@@ -1,0 +1,29 @@
+{
+  "name": "figma-userflow-generator",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build:ui": "vite build",
+    "build:plugin": "tsc -p tsconfig.plugin.json",
+    "build": "npm run build:plugin && npm run build:ui",
+    "watch": "concurrently \"npm run build:ui -- --watch\" \"npm run build:plugin -- --watch\"",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.100.2",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^8.2.2",
+    "eslint": "^9.9.1",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.2",
+    "vite-plugin-singlefile": "^1.0.0"
+  }
+}

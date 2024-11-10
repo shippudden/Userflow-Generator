@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "lib": ["es6"],
+      "typeRoots": ["./node_modules/@figma"],
+      "moduleResolution": "node",
+      "module": "es6",
+      "strict": true,
+      "outDir": "dist",
+      "rootDir": "src/plugin"
+    },
+    "include": ["src/plugin/**/*"]
+  }
